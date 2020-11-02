@@ -1,0 +1,4 @@
+# By running this command, you'll be able to access the files in your local directory through your browser at localhost:8080
+
+python3 -m http.server 8080
+
