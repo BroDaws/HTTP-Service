@@ -1,0 +1,10 @@
+# TCP Socket Address which contains an IP address and a port number. which can be set up with Python's socketserver.TCPServer (default python usage)
+
+import http.server
+import socketserver
+
+handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), handler) as httpd:
+    print("Server started at localhost:" + str(PORT))
+    httpd.serve_forever()
